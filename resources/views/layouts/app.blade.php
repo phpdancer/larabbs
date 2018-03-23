@@ -11,7 +11,7 @@
     <title>@yield('title', 'LaraBBS') - Laravel 进阶教程</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}?v=1" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}?v=2" rel="stylesheet">
 </head>
 
 <body>
@@ -29,6 +29,6 @@
 </div>
 
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}?v=1"></script>
+<script src="{{ asset('js/app.js') }}?v=2"></script>
 </body>
 </html>
