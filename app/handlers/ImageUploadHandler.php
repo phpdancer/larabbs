@@ -7,6 +7,8 @@
  */
 namespace App\Handlers;
 
+use Image;
+
 /**
  * 图片上传类
  * Class ImageUploadHandler
