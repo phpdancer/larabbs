@@ -12,7 +12,7 @@
     <meta name="description" content="@yield('description', 'LaraBBS 爱好者社区')" />
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}?v=6" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}?v=7" rel="stylesheet">
     @yield('styles')
 </head>
 
