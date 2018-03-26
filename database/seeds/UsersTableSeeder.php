@@ -27,7 +27,7 @@ class UsersTableSeeder extends Seeder
 
         // 生成数据集合
         $users = factory(User::class)
-            ->times(10)
+            ->times(1000)
             ->make()
             ->each(function ($user, $index)
             use ($faker, $avatars)
@@ -43,10 +43,21 @@ class UsersTableSeeder extends Seeder
         User::insert($user_array);
 
 //        // 单独处理第一个用户的数据
-//        $user = User::find(1);
-//        $user->name = 'Summer';
-//        $user->email = 'summer@yousails.com';
+        $user = User::find(1);
+        $user->name = 'Friday';
+        $user->email = '1780997282@qq.com';
 //        $user->avatar = 'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png?imageView2/1/w/200/h/200';
-//        $user->save();
+        $user->save();
+
+        // 初始化用户角色，将 1 号用户指派为『站长』
+        $user->assignRole('Founder');
+
+        // 将 2 号用户指派为『管理员』
+        $user = User::find(2);
+        $user->assignRole('Maintainer');
+        $user->name = 'Friday2';
+        $user->email = '760093895@qq.com';
+        $user->avatar = 'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png?imageView2/1/w/200/h/200';
+        $user->save();
     }
 }
