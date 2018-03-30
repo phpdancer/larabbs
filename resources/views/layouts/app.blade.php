@@ -13,7 +13,7 @@
     <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'LaraBBS,社区,论坛,开发者论坛'))" />
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}?v=8" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}?v=9" rel="stylesheet">
     @yield('styles')
 </head>
 
